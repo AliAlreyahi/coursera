@@ -1,0 +1,43 @@
+body {
+  font-family: "Merienda", cursive, serif;
+  max-width: 1600px;
+  font-size: 1.5rem;
+  background-color: #c0eba6;
+  color: #347928;
+  margin: 0 auto;
+  text-shadow: 1px 1px 0 #484848;
+}
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+header .logo {
+  margin-top: 1.75rem;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+.baner img {
+  width: 100%;
+  max-width: 1600px;
+  box-shadow: rgb(0 0 0 / 80%) 2px 2px 6px;
+  margin-top: -3.5rem;
+}
+
+footer {
+  grid-area: footer;
+}
